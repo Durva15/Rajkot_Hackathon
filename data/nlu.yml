@@ -1,5 +1,7 @@
 version: "2.0"
 nlu:
+
+#Greeting new users
 - intent: greet
   examples: |
     - hey
@@ -14,10 +16,14 @@ nlu:
     - hey dude
     - goodmorning
     - goodevening
+    - goodafternoon
     - good afternoon
+
 - intent: thanks
   examples: |
     - 
+
+#Queries related to RMC
 - intent: what_is_rmc
   examples: |
     - What is rmc?
@@ -30,6 +36,8 @@ nlu:
     - rmc website
     - rmc contact
     - what is rmc
+
+#Queries related to online services
 - intent: online_services
   examples: |
     - what services does rmc provide
@@ -37,6 +45,8 @@ nlu:
     - rmc services
     - services
     - online services
+
+#Queries related to property services
 - intent: property
   examples: |
     - what is property tax
@@ -45,6 +55,8 @@ nlu:
     - property tax
     - property
     - property view
+
+#Queries related to water services
 - intent: water
   examples: |
     - water charges
@@ -52,15 +64,18 @@ nlu:
     - what is water charge
     - can i know more about water charge
     - water
+
+#Queries related to profession tax services
 - intent: profession
   examples: |
     - profession tax
     - enrollment certificate
     - how to pay profession tax
-    - what is water charge
     - can i know more about profession tax
     - registration certificate
     - profession
+
+#Queries related to RTI
 - intent: rti
   examples: |
     - what is rti
@@ -69,6 +84,8 @@ nlu:
     - rti applicatoin status
     - rti proactive disclosure
     - rti
+
+#Queries related to Hall Booking service
 - intent: hall_booking
   examples: |
     - how do i book community hall
@@ -78,11 +95,15 @@ nlu:
     - audirorium booking form
     - is any hall booking open
     - booking
+
+#Queries related to sports services
 - intent: sports
   examples: |
     - is sports registration open
     - sports registration
     - sports
+
+#Queries related to shop registration and establishment 
 - intent: shop
   examples: |
     - shop registration
@@ -91,6 +112,8 @@ nlu:
     - insrtuction for shop establisment
     - new shop registration
     - shop
+
+#Queries related to City Bus services
 - intent: city_bus
   examples: |
     - bus pass
@@ -98,6 +121,8 @@ nlu:
     - student bus pass
     - city bus pass
     - brts bus pass
+
+#Queries related to E-Memo payment services
 - intent: e_memo
   examples: |
     - memo
@@ -106,6 +131,8 @@ nlu:
     - vehicle memo
     - what is e-memo
     - what is memo
+
+#Queries related to vehicle tax payment 
 - intent: vehicle
   examples: |
     - individual vehicle tax
@@ -114,6 +141,8 @@ nlu:
     - how do i pay vehicle tax
     - how to pay vehicle tax
     - vehicle
+
+#Queries related to Call Centre Services
 - intent: call_center
   examples: |
     - complain registration
@@ -124,6 +153,8 @@ nlu:
     - i want to file complain
     - complain
     - call center
+
+#Goodbye
 - intent: goodbye
   examples: |
     - good afternoon
@@ -137,6 +168,8 @@ nlu:
     - see you around
     - bye bye
     - see you later
+
+#Receiving affirmation from user
 - intent: affirm
   examples: |
     - yes
@@ -145,6 +178,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+
+#Receining denial from the user
 - intent: deny
   examples: |
     - no
@@ -154,6 +189,8 @@ nlu:
     - don't like that
     - no way
     - not really
+
+#Great mood
 - intent: mood_great
   examples: |
     - perfect
@@ -170,6 +207,8 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+
+#Unhappy mood
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -186,6 +225,8 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+
+#Questions chanllenging Bot
 - intent: bot_challenge
   examples: |
     - are you a bot?
